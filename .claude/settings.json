@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "TodoWrite"
+    ],
+    "deny": [
+      "Edit .env",
+      "Edit .env.*",
+      "Edit credentials.json",
+      "Edit *.pem",
+      "Edit *.key",
+      "Edit service-account.json"
+    ]
+  },
+  "defaults": {
+    "language": "es"
+  }
+}
