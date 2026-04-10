@@ -32,3 +32,5 @@ Registrar toda decisión importante para que no se repitan errores, no se contra
 | 0001 | [Adoptar VibeRepo como base de proyecto](0001-adoptar-vibeRepo.md) | Aceptada | 2026-04-06 |
 | 0002 | [Convención de carpeta product/ para implementación](0002-convencion-carpeta-product.md) | Aceptada | 2026-04-07 |
 | 0003 | [PRD por referencia con snapshot versionado](0003-prd-por-referencia-con-snapshot.md) | Aceptada | 2026-04-08 |
+| 0004 | [Stack React + Vite + Tailwind para feature intake-form](0004-stack-react-vite-tailwind-intake.md) | Aceptada | 2026-04-08 |
+| 0005 | [Adoptar shadcn/ui como base de componentes reutilizables](0005-adoptar-shadcn-ui-en-vite.md) | Aceptada | 2026-04-09 |

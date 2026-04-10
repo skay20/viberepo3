@@ -81,19 +81,46 @@ docs/diseno/
 ## Foundations (completar cuando se defina el stack)
 
 ### Colores
-(definir paleta: primario, secundario, neutros, semánticos, superficies)
+- Primario: `--color-primary` `#1c1917`
+- Primario fuerte (hover): `--color-primary-strong` `#2b2724`
+- Acento premium: `--color-accent` `#a16207`
+- Acento suave: `--color-accent-soft` `rgba(161, 98, 7, 0.10)`
+- Superficie base: `--color-surface` `#f5f1ea`
+- Panel/contenedor: `--color-panel` `rgba(255, 251, 247, 0.82)`
+- Texto principal: `--color-ink` `#171411`
+- Texto secundario: `--color-muted` `#6b6259`
+- Borde: `--color-border` `#d8cfc4`
+- Semánticos: `--color-danger` `#b42318`, `--color-success` `#1f6d43`
 
 ### Tipografía
-(definir: familia, tamaños, pesos, line-height)
+- Heading: `Playfair Display`, pesos `500/600/700`
+- Body: `Inter`, pesos `300/400/500/600/700`
+- Dirección: editorial sobria, con serif de alto contraste para titulares y sans neutra para legibilidad de formulario
+- Escala base usada: `text-xs`, `text-sm`, `text-base`, `text-lg`, `text-2xl`, `text-4xl`, `text-5xl`, `text-6xl`
 
 ### Espaciado
-(definir escala: 4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px o equivalente)
+- Tokens CSS: `--space-1/2/3/4/5/6/8/10/12`
+- Equivalencias: `4, 8, 12, 16, 20, 24, 32, 40, 48 px`
 
 ### Bordes y sombras
-(definir: radius, border-width, sombras por nivel)
+- Radius: `--radius-sm` `12px`, `--radius-md` `16px`, `--radius-lg` `24px`, `--radius-xl` `32px`
+- Border width base: `1px`
+- Sombra principal panel: `--shadow-panel` `0 28px 80px rgba(23, 20, 17, 0.12)`
+- Sombra de foco: `--shadow-focus` `0 0 0 3px rgba(161, 98, 7, 0.22)`
 
 ### Estados
-(definir: default, hover, active, focus, disabled, error, loading)
+- Default: variante base por componente
+- Hover: `primary -> primary-strong`, secundarios elevan contraste y borde con acento oro
+- Focus: `shadow-focus` consistente en campos y botones
+- Disabled: `opacity-60` + `cursor-not-allowed`
+- Error: borde/mensaje `danger`
+- Loading: no implementado en esta fase (N/A)
+
+## Componentes documentados
+- `docs/diseno/componentes/button.md`
+- `docs/diseno/componentes/card.md`
+- `docs/diseno/componentes/field.md`
+- `docs/diseno/componentes/stepper.md`
 
 ## Checklist de revisión visual
 Antes de cerrar un cambio de UI:

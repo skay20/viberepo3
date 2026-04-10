@@ -7,81 +7,57 @@ Este documento define qué significa que el proyecto "corra" y registra el estad
 ## Setup
 
 ### Prerequisitos
-(completar: Node, Python, Docker, etc.)
+- Node.js 20+
+- npm 10+
 
 ### Instalación
-```
-(completar con los comandos de instalación)
-```
-
-Ejemplo (implementación en `product/`):
 ```bash
-cd product
+cd product/intake-form
 npm install
 ```
 
 ### Variables de entorno
-(referencia a docs/contexto/README.md para el listado completo)
+- No requiere variables para la fase actual.
 
 ### Ejecución
-```
-(completar con los comandos para levantar el proyecto)
-```
-
-Ejemplo (implementación en `product/`):
 ```bash
-cd product
+cd product/intake-form
 npm run dev
 ```
 
 ### Build
-```
-(completar con los comandos de build/compile)
-```
-
-Ejemplo (implementación en `product/`):
 ```bash
-cd product
+cd product/intake-form
 npm run build
 ```
 
 ### Tests
-```
-(completar con los comandos de test)
-```
-
-Ejemplo (implementación en `product/`):
 ```bash
-cd product
-npm test
+cd product/intake-form
+npm run lint
 ```
 
 ## Criterios mínimos de "esto corre"
-- [ ] Se instalan las dependencias sin errores
-- [ ] El proyecto se levanta sin errores fatales
-- [ ] La ruta o endpoint principal responde
-- [ ] No hay errores bloqueantes en consola/logs
-- [ ] Los tests existentes pasan
+- [x] Se instalan las dependencias sin errores
+- [x] El proyecto se levanta sin errores fatales
+- [x] La ruta principal responde
+- [x] No hay errores bloqueantes en consola/logs
+- [x] Los checks existentes (`lint`) pasan
 
 ## Estado actual
-(actualizar cada vez que cambie significativamente)
 
 | Aspecto | Estado | Notas |
 |---------|--------|-------|
-| Instalación | (pendiente) | ... |
-| Ejecución | (pendiente) | ... |
-| Build | (pendiente) | ... |
-| Tests | (pendiente) | ... |
+| Instalación | verificado | `npm install` exitoso |
+| Ejecución | verificado | `npm run dev` disponible |
+| Build | verificado | `npm run build` exitoso |
+| Tests | parcial | no hay test runner, se usa `lint` |
 
 ## Errores conocidos
-(registrar cualquier error que quede sin resolver)
 
 | Error | Impacto | Workaround | Fecha |
 |-------|---------|------------|-------|
 | (vacío) | | | |
 
 ## Notas
-- Nunca dar por terminada una tarea importante si el proyecto no compila o no corre
-- Si algo queda parcial, documentar aquí qué falta
-- Mantener este archivo actualizado con cada cambio relevante de setup o ejecución
-- Compatibilidad legado: si el repo existente tiene código en raíz, usar comandos desde raíz y documentar la excepción en arquitectura/cambios.
+- El proyecto no tiene suite de tests automatizados todavía.

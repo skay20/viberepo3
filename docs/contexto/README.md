@@ -1,52 +1,55 @@
 # Contexto del Proyecto
 
 Este archivo describe el contexto operativo del proyecto: stack, entorno, integraciones y restricciones.
-Debe completarse al iniciar el proyecto y mantenerse actualizado.
 
 ---
 
 ## Nombre del proyecto
-(completar)
+Candidate Intake Form
 
 ## Descripción breve
-(completar - una línea que explique qué es el proyecto)
+Aplicación frontend para intake de candidatos con flujo guiado de 4 pasos, validaciones obligatorias y confirmación final.
 
 ## Stack tecnológico
-(completar cuando se defina - no inventar si el PRD no lo especifica)
 
-- Frontend: 
-- Backend: 
-- Base de datos: 
-- Infraestructura: 
-- Otros: 
+- Frontend: React 19 + Vite 8 + Tailwind CSS 3.4 + shadcn/ui (integracion incremental)
+- Backend: No aplica (fase actual)
+- Base de datos: No aplica (fase actual)
+- Infraestructura: Ejecución local con Node.js
+- Otros: ESLint, class-variance-authority, clsx, tailwind-merge, Lucide
 
 ## Entorno de ejecución
-- Local: 
-- Staging: 
-- Producción: 
+- Local: `product/intake-form`
+- Staging: No configurado
+- Producción: Build estático (pendiente de hosting)
 
 ## Integraciones externas
 (APIs, servicios terceros, SDKs)
 
-- ...
+- Ninguna en esta fase
 
 ## Restricciones conocidas
-(límites técnicos, regulatorios, de tiempo, de equipo)
 
-- ...
+- Todo client-side
+- Sin persistencia en backend ni base de datos
+- Sin autenticación
+- Sin integración ATS
 
 ## Variables de entorno requeridas
-(listar sin incluir valores reales)
 
 | Variable | Propósito | Obligatoria |
 |----------|-----------|-------------|
-| ... | ... | Sí/No |
+| No aplica | No se requieren variables en esta fase | No |
 
 ## Scripts disponibles
 
 | Comando | Propósito |
 |---------|-----------|
-| ... | ... |
+| `npm run dev` | Ejecuta app en desarrollo |
+| `npm run build` | Genera build de producción |
+| `npm run preview` | Sirve build localmente |
+| `npm run lint` | Ejecuta análisis estático |
 
 ## Notas
-(cualquier contexto adicional que ayude a entender el proyecto)
+- La implementación vive en `product/intake-form/` siguiendo ADR 0002.
+- Decisión de stack registrada en ADR 0004.

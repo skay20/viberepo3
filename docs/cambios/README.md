@@ -34,4 +34,6 @@ Los cambios posteriores se registran aquí como change requests, feature request
 
 | # | Título | Tipo | Estado | Fecha |
 |---|--------|------|--------|-------|
-| (vacío - se llena con el primer cambio) |
+| CR-0001 | [Multi-step Candidate Intake Form](CR-0001-intake-form-multistep.md) | Change Request | Implementado | 2026-04-08 |
+| CR-0002 | [Premium UI Refresh para intake form](CR-0002-premium-ui-refresh.md) | Change Request | Implementado | 2026-04-08 |
+| CR-0003 | [Integracion inicial de shadcn/ui en intake form](CR-0003-shadcn-ui-integration.md) | Change Request | Implementado | 2026-04-09 |
