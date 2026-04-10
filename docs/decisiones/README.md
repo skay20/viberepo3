@@ -34,3 +34,4 @@ Registrar toda decisión importante para que no se repitan errores, no se contra
 | 0003 | [PRD por referencia con snapshot versionado](0003-prd-por-referencia-con-snapshot.md) | Aceptada | 2026-04-08 |
 | 0004 | [Stack React + Vite + Tailwind para feature intake-form](0004-stack-react-vite-tailwind-intake.md) | Aceptada | 2026-04-08 |
 | 0005 | [Adoptar shadcn/ui como base de componentes reutilizables](0005-adoptar-shadcn-ui-en-vite.md) | Aceptada | 2026-04-09 |
+| 0006 | [Adoptar DESIGN.md como direccion visual activa para intake form](0006-adoptar-design-md-como-direccion-visual-activa.md) | Aceptada | 2026-04-10 |

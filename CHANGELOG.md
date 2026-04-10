@@ -60,3 +60,37 @@ No usar este archivo para cambios del repo base VibeRepo; esos van en `FRAMEWORK
 ### Follow-ups
 - Migrar mas primitives locales a `src/components/ui/` si se amplía la app.
 - Evaluar migracion futura a Tailwind 4 si se quiere alineacion total con el output actual del CLI.
+
+## [2026-04-10] Pasada visual guiada por DESIGN.md adaptado desde ElevenLabs
+
+### Cambios
+- Uso explícito de `product/intake-form/DESIGN.md` como referencia visual activa para el producto.
+- Revisión del shell principal con chrome oscuro exterior y paneles internos claros para elevar contraste y jerarquía.
+- Ajuste de tokens de color, sombras, radius y estados en `src/index.css` y `tailwind.config.js`.
+- Refinamiento de `Button`, `Field`, `Stepper`, `Card` e `Input` para una presencia más técnica y sobria.
+- Actualización de `AGENTS.md` y `CLAUDE.md` para exigir lectura de `DESIGN.md` en tareas de UI cuando exista una guía aplicable.
+- Registro de la nueva decisión visual en `docs/diseno/decisiones/elevenlabs-adapted-product-direction.md`.
+- ADR 0006 para formalizar `DESIGN.md` como nueva referencia visual activa.
+- Registro del cambio en `docs/cambios/CR-0004-design-md-visual-pass.md`.
+
+### Impacto
+- La UI mantiene el flujo y la lógica existentes, pero gana un lenguaje visual más moderno, limpio y reusable.
+- Se alinea la gobernanza del repo con una fuente visual explícita para futuras iteraciones de UI.
+
+### Follow-ups
+- Validar la interfaz en móvil real y desktop ancho.
+- Extender esta dirección a nuevas pantallas si el producto crece.
+
+## [2026-04-10] Ajuste de gobernanza documental al estado real del repo
+
+### Cambios
+- Actualización del `README.md` raíz para reflejar que este repositorio opera hoy como proyecto derivado y no solo como plantilla.
+- Alineación de `docs/contexto/README.md`, `docs/run/README.md` y `product/README.md` con el producto activo en `product/intake-form`.
+- Adición de referencias explícitas a `product/intake-form/DESIGN.md` como guía visual activa y a los documentos canónicos vigentes.
+
+### Impacto
+- Se reduce la ambigüedad entre documentación de plantilla base y realidad operativa del repo actual.
+- La navegación documental queda más clara para humanos y agentes.
+
+### Follow-ups
+- Si el repo vuelve a usarse como framework puro, separar mejor la documentación de plantilla del estado del proyecto derivado.

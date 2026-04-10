@@ -109,11 +109,14 @@ Regla base: seguir `docs/operacion/contrato-ejecucion.md` como fuente común con
 > Solo aplica si el proyecto tiene frontend o capa visual.
 
 1. Leer `docs/diseno/README.md` antes de crear cualquier componente nuevo.
-2. Revisar componentes existentes en `docs/diseno/componentes/`.
-3. Reutilizar antes de crear. Extender antes de duplicar.
-4. Si se crea un componente nuevo, documentarlo en `docs/diseno/componentes/[nombre].md` usando `_template-componente.md`.
-5. No hardcodear valores visuales que deban ser tokens o variables.
-6. Si un cambio visual rompe o extiende una regla del design system, documentar la excepción en `docs/diseno/decisiones/`.
+2. Si existe un `DESIGN.md` aplicable al scope actual, leerlo antes de diseñar o implementar UI. En este repo, la referencia activa para `product/intake-form` es `product/intake-form/DESIGN.md`.
+3. `DESIGN.md` define dirección visual; `AGENTS.md` define forma de trabajo, calidad y ejecución.
+4. Si hay conflicto entre estilo y producto real, priorizar usabilidad, accesibilidad y coherencia del dominio antes que imitar la referencia visual.
+5. Revisar componentes existentes en `docs/diseno/componentes/`.
+6. Reutilizar antes de crear. Extender antes de duplicar.
+7. Si se crea un componente nuevo, documentarlo en `docs/diseno/componentes/[nombre].md` usando `_template-componente.md`.
+8. No hardcodear valores visuales que deban ser tokens o variables.
+9. Si un cambio visual rompe o extiende una regla del design system, documentar la excepción en `docs/diseno/decisiones/`.
 
 ## Regla de cierre para UI nueva (obligatoria)
 

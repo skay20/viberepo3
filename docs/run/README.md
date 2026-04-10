@@ -16,6 +16,8 @@ cd product/intake-form
 npm install
 ```
 
+> Nota: `product/intake-form` es hoy el producto ejecutable principal y mantiene su propio árbol Git anidado.
+
 ### Variables de entorno
 - No requiere variables para la fase actual.
 
@@ -61,3 +63,4 @@ npm run lint
 
 ## Notas
 - El proyecto no tiene suite de tests automatizados todavía.
+- Para tareas de UI, revisar antes `docs/diseno/README.md` y `product/intake-form/DESIGN.md`.

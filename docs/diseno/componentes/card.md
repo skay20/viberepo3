@@ -23,8 +23,8 @@ Contenedor reusable para bloques de contenido con jerarquía visual consistente.
 ## Tokens utilizados
 - Color: `card`, `card-foreground`, `border`
 - Spacing: `p-6`, `pt-0`
-- Typography: `font-heading` en títulos
-- Border/Shadow: `rounded-xl`, `shadow-sm`
+- Typography: `font-heading` ligera para títulos y `Inter` para cuerpo
+- Border/Shadow: `rounded-xl`, `shadow-soft`
 
 ## Uso
 
@@ -44,6 +44,7 @@ Contenedor reusable para bloques de contenido con jerarquía visual consistente.
 
 ## Restricciones
 - No usar para layout global completo si solo se necesita un wrapper simple.
+- En shell oscuro, usar cards translúcidas o claras según contraste requerido; no mezclar sombras pesadas.
 
 ## Decisiones relacionadas
 - ADR: [0005]

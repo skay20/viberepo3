@@ -1,6 +1,6 @@
 # README del producto — Candidate Intake Form
 
-Aplicación frontend de intake de candidatos en 4 pasos.
+Aplicación frontend de intake de candidatos en 4 pasos. Este es el producto ejecutable principal del repositorio y su implementación vive en `product/intake-form`.
 
 ## Prerequisitos
 - Node.js 20+
@@ -22,6 +22,8 @@ No requiere `.env` en esta fase.
 cd product/intake-form
 npm run dev
 ```
+
+La guía visual activa del producto está en `product/intake-form/DESIGN.md`.
 
 ## Cómo buildear
 
@@ -45,3 +47,10 @@ npm run lint
 | Ejecución | verificado | Vite dev server operativo |
 | Build | verificado | build productivo generado |
 | Tests | parcial | no hay tests automatizados, solo lint |
+
+## Documentos canónicos relacionados
+
+- Contexto técnico: `docs/contexto/README.md`
+- Estado ejecutable: `docs/run/README.md`
+- PRD activo: `PRD.md`
+- Design system: `docs/diseno/README.md`

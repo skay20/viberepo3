@@ -27,10 +27,10 @@ Acción primaria/secundaria consistente para navegación del formulario y CTAs.
 - Disabled
 
 ## Tokens utilizados
-- Color: `primary`, `primary-strong`, `accent`, `border`, `ink`, `panel`
+- Color: `primary`, `primary-strong`, `accent`, `border`, `ink`, `panel-soft`
 - Spacing: `px-6`, `py-3`
 - Typography: `text-sm`, `font-semibold`, `tracking-[0.08em]`, `uppercase`
-- Border/Shadow: `rounded-full`, `shadow-focus`
+- Border/Shadow: `rounded-full`, borde fino e inset sutil, `shadow-focus`
 
 ## Uso
 
@@ -47,6 +47,7 @@ Acción primaria/secundaria consistente para navegación del formulario y CTAs.
 ## Restricciones
 - No usar como enlace externo (usar `<a>` cuando corresponda).
 - No agregar colores inline fuera de tokens.
+- El CTA principal debe seguir siendo la acción dominante de la vista; no duplicarlo con otra variante fuerte.
 
 ## Decisiones relacionadas
 - ADR: [0004]

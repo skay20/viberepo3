@@ -144,6 +144,9 @@ Riesgo alto: seguridad, datos, cumplimiento, migraciones irreversibles, impacto 
 
 ### Reglas base
 - Revisar `docs/diseno/README.md` antes de crear cualquier componente visual.
+- Si existe un `DESIGN.md` aplicable al scope actual, leerlo antes de diseñar o implementar UI. Para `product/intake-form`, la referencia activa es `product/intake-form/DESIGN.md`.
+- `DESIGN.md` define dirección visual; `CLAUDE.md` define proceso, calidad y ejecución.
+- Si la referencia visual entra en conflicto con el producto real, priorizar usabilidad, accesibilidad y coherencia del dominio antes que la imitación estilística.
 - Reutilizar componentes existentes. Si no hay uno adecuado, documentar el nuevo en `docs/diseno/componentes/`.
 - No hardcodear colores, spacing, tipografía o sombras. Usar tokens o variables.
 - Si un patrón visual aparece más de dos veces, evaluar para promoción a componente compartido.

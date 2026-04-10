@@ -31,6 +31,12 @@ No abstraer componentes que todavía no sean un patrón real repetido.
 
 ## Principios obligatorios
 
+## Referencia visual activa
+- Guía visual aplicable al producto actual: `product/intake-form/DESIGN.md`
+- La referencia importada se interpreta como dirección abstracta, no como clon literal
+- Mantener solo principios útiles al dominio real: contraste limpio, superficies elegantes, jerarquía tipográfica clara, CTAs refinados y composición sobria
+- Descartar patrones ajenos al producto, como metáforas de audio, waveforms, reproductores o copy de marketing importado
+
 ### 1. Reuse primero
 - Nunca crear UI nueva sin revisar si ya existe componente, variante o patrón reusable
 - Si un patrón aparece por segunda vez, evaluar explícitamente para promoción
@@ -81,22 +87,25 @@ docs/diseno/
 ## Foundations (completar cuando se defina el stack)
 
 ### Colores
-- Primario: `--color-primary` `#1c1917`
-- Primario fuerte (hover): `--color-primary-strong` `#2b2724`
-- Acento premium: `--color-accent` `#a16207`
-- Acento suave: `--color-accent-soft` `rgba(161, 98, 7, 0.10)`
-- Superficie base: `--color-surface` `#f5f1ea`
-- Panel/contenedor: `--color-panel` `rgba(255, 251, 247, 0.82)`
-- Texto principal: `--color-ink` `#171411`
-- Texto secundario: `--color-muted` `#6b6259`
-- Borde: `--color-border` `#d8cfc4`
-- Semánticos: `--color-danger` `#b42318`, `--color-success` `#1f6d43`
+- Canvas/chrome exterior: `--color-canvas` `#0a0d14`, `--color-chrome` `#11151f`
+- Superficie base interna: `--color-surface` `#f4f2ee`
+- Panel principal: `--color-panel` `rgba(255, 255, 255, 0.96)`
+- Panel suave: `--color-panel-soft` `rgba(245, 242, 239, 0.76)`
+- Texto principal: `--color-ink` `#111318`
+- Texto secundario: `--color-muted` `#676c75`
+- Borde claro interior: `--color-border` `rgba(17, 19, 24, 0.10)`
+- Línea sobre chrome: `--color-line` `rgba(255, 255, 255, 0.10)`
+- Primario/CTA: `--color-primary` `#111318`
+- Primario fuerte: `--color-primary-strong` `#05070b`
+- Acento cálido controlado: `--color-accent` `#b38a55`
+- Acento suave: `--color-accent-soft` `rgba(179, 138, 85, 0.12)`
+- Semánticos: `--color-danger` `#b42318`, `--color-success` `#0f766e`
 
 ### Tipografía
-- Heading: `Playfair Display`, pesos `500/600/700`
+- Heading: `Inter`, pesos `300/400/500`
 - Body: `Inter`, pesos `300/400/500/600/700`
-- Dirección: editorial sobria, con serif de alto contraste para titulares y sans neutra para legibilidad de formulario
-- Escala base usada: `text-xs`, `text-sm`, `text-base`, `text-lg`, `text-2xl`, `text-4xl`, `text-5xl`, `text-6xl`
+- Dirección: moderna, técnica y sobria; títulos ligeros con tracking cerrado y cuerpo muy legible para formularios
+- Escala base usada: `text-[11px]`, `text-xs`, `text-sm`, `text-base`, `text-lg`, `text-3xl`, `text-4xl`, `text-5xl`
 
 ### Espaciado
 - Tokens CSS: `--space-1/2/3/4/5/6/8/10/12`
@@ -105,13 +114,16 @@ docs/diseno/
 ### Bordes y sombras
 - Radius: `--radius-sm` `12px`, `--radius-md` `16px`, `--radius-lg` `24px`, `--radius-xl` `32px`
 - Border width base: `1px`
-- Sombra principal panel: `--shadow-panel` `0 28px 80px rgba(23, 20, 17, 0.12)`
-- Sombra de foco: `--shadow-focus` `0 0 0 3px rgba(161, 98, 7, 0.22)`
+- Sombra shell exterior: `--shadow-panel` `0 0 0 1px rgba(255,255,255,0.04), 0 48px 120px rgba(0,0,0,0.38)`
+- Sombra soft interna: `--shadow-soft` `inset 0 0 0 0.5px rgba(17,19,24,0.08), 0 18px 50px rgba(17,19,24,0.06)`
+- Sombra elevada: `--shadow-elevated` `0 0 0 1px rgba(17,19,24,0.06), 0 20px 44px rgba(17,19,24,0.08)`
+- Sombra de foco: `--shadow-focus` `0 0 0 3px rgba(179, 138, 85, 0.18)`
 
 ### Estados
-- Default: variante base por componente
-- Hover: `primary -> primary-strong`, secundarios elevan contraste y borde con acento oro
-- Focus: `shadow-focus` consistente en campos y botones
+- Default: superficies claras internas y shell oscuro externo
+- Hover: `primary -> primary-strong`; secundarios aclaran fondo y ajustan borde hacia acento
+- Focus: `shadow-focus` consistente en campos y botones, con contraste suficiente
+- Active: incremento sutil de contraste, sin escalados agresivos
 - Disabled: `opacity-60` + `cursor-not-allowed`
 - Error: borde/mensaje `danger`
 - Loading: no implementado en esta fase (N/A)

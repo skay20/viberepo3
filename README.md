@@ -1,34 +1,38 @@
-# VibeRepo — Base Clonable de Proyecto
+# viberepo3 — Repo derivado gobernado por VibeRepo
 
-Repositorio base para iniciar cualquier proyecto desde un PRD, con gobernanza clara, memoria persistente, documentación viva y soporte de primera clase para **Codex** y **Claude**.
+Proyecto derivado nacido desde VibeRepo. Mantiene la gobernanza base de documentación y agentes, pero ya no es solo una plantilla: hoy contiene un producto real en `product/intake-form`.
 
 ---
 
 ## Qué es esto
 
-Una plantilla reusable que resuelve el problema de arrancar proyectos sin estructura, sin memoria y sin consistencia. Al clonar este repo obtenés:
+Este repositorio conserva la estructura documental de VibeRepo y la usa para operar un proyecto activo. Hoy el artefacto principal es una aplicación frontend de intake de candidatos en 4 pasos, con documentación viva, memoria de decisiones y reglas operativas para Codex y Claude.
 
-- Instrucciones operativas para Codex (AGENTS.md) y Claude (CLAUDE.md)
-- Flujo PRD por referencia (ruta/adjunto/URL) sin copy/paste manual
-- Skill/agente `framework-sanitizer` para sanear drift documental del repo base
+El repo sigue siendo útil como referencia de gobernanza, pero su estado actual es el de un proyecto derivado ejecutable.
+
+## Qué incluye hoy
+
+- Producto activo en `product/intake-form`
+- Instrucciones operativas para Codex ([AGENTS.md](/Users/matiassouza/Desktop/viberepo3/AGENTS.md)) y Claude ([CLAUDE.md](/Users/matiassouza/Desktop/viberepo3/CLAUDE.md))
+- PRD activo y snapshot versionado
 - Sistema de decisiones con ADRs
 - Gestión de cambios post-PRD
-- Contrato de ejecución anti-skip (entrega completa/parcial + cobertura PRD)
-- Gobernanza de diseño para proyectos con UI
-- Guía de arquitectura y buenas prácticas
-- QA y checklists de verificación
-- Changelog estructurado
+- Contrato de ejecución anti-skip
+- Gobernanza de diseño y guía visual activa (`product/intake-form/DESIGN.md`)
 - Estado ejecutable documentado
-- Estructura para especialidades/subagentes futuros
 
-## Repo base vs repo derivado
+## Estado actual del repo
 
-- `FRAMEWORK_CHANGELOG.md` = historial del repo base (`skay20/VibeRepo`).
-- `CHANGELOG.md` = historial del proyecto derivado (template al clonar).
+- Modo detectado por `origin`: repo derivado
+- Producto principal: `product/intake-form`
+- Stack del producto: React + Vite + Tailwind CSS + `shadcn/ui`
+- Guía visual activa del producto: `product/intake-form/DESIGN.md`
 
-## Cómo usar
+## Si quieres reutilizar esta base en otro proyecto
 
-### 1. Clonar el repo
+La estructura sigue sirviendo como semilla de gobernanza. El proceso general sigue siendo:
+
+### 1. Clonar VibeRepo base
 
 ```bash
 git clone https://github.com/skay20/VibeRepo.git mi-nuevo-proyecto
@@ -37,7 +41,7 @@ rm -rf .git
 git init
 ```
 
-### 2. Referenciar el PRD (recomendado)
+### 2. Referenciar el PRD
 
 Iniciar con un prompt en lenguaje natural que incluya referencia explícita al PRD:
 
@@ -89,7 +93,17 @@ Si usás otra estructura (ej. `apps/<slug>`), documentá la excepción en `docs/
 - Cierres grandes → declarar `ENTREGA COMPLETA/PARCIAL` + matriz de cobertura PRD
 - Cada cambio → actualizar `CHANGELOG.md`
 
-> En el repo base VibeRepo, los cambios del framework se registran en `FRAMEWORK_CHANGELOG.md`.
+> En el repo base VibeRepo, los cambios del framework se registran en `FRAMEWORK_CHANGELOG.md`. En este repo actual, el historial activo está en `CHANGELOG.md`.
+
+## Canonical docs
+
+- Entrada humana principal: `README.md`
+- Historial de cambios del proyecto actual: `CHANGELOG.md`
+- Instrucciones operativas de agentes: `AGENTS.md`, `CLAUDE.md`
+- Contexto técnico actual: `docs/contexto/README.md`
+- Estado de ejecución: `docs/run/README.md`
+- PRD activo: `PRD.md`
+- Guía de diseño: `docs/diseno/README.md`
 
 ## Estructura del repo
 
@@ -150,6 +164,12 @@ skills/
 └── framework-sanitizer/
     └── SKILL.md                       ← Skill Codex para sanear drift documental del framework base
 ```
+
+## Repo base vs repo derivado
+
+- `FRAMEWORK_CHANGELOG.md` = historial del repo base (`skay20/VibeRepo`)
+- `CHANGELOG.md` = historial del proyecto derivado actual
+- La regla operativa real depende del `origin`, no del nombre del repositorio
 
 ## Principios
 

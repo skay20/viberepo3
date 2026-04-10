@@ -1,5 +1,7 @@
 # Direccion visual premium editorial para intake form
 
+> Estado actual: reemplazada como referencia visual activa por `docs/diseno/decisiones/elevenlabs-adapted-product-direction.md` el 2026-04-10.
+
 ## Fecha
 2026-04-08
 

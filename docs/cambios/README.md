@@ -37,3 +37,4 @@ Los cambios posteriores se registran aquí como change requests, feature request
 | CR-0001 | [Multi-step Candidate Intake Form](CR-0001-intake-form-multistep.md) | Change Request | Implementado | 2026-04-08 |
 | CR-0002 | [Premium UI Refresh para intake form](CR-0002-premium-ui-refresh.md) | Change Request | Implementado | 2026-04-08 |
 | CR-0003 | [Integracion inicial de shadcn/ui en intake form](CR-0003-shadcn-ui-integration.md) | Change Request | Implementado | 2026-04-09 |
+| CR-0004 | [Adaptar DESIGN.md como nueva direccion visual del intake](CR-0004-design-md-visual-pass.md) | Change Request | Implementado | 2026-04-10 |

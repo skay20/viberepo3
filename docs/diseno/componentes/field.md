@@ -33,10 +33,10 @@ Estandarizar inputs y textareas con label, estado de error y accesibilidad bási
 - Error
 
 ## Tokens utilizados
-- Color: `panel`, `ink`, `muted`, `border`, `accent`, `danger`
+- Color: `panel-soft`, `ink`, `muted`, `border`, `accent`, `danger`
 - Spacing: `px-5`, `py-4`
 - Typography: `text-sm`, labels en mayúscula con tracking amplio
-- Border/Shadow: `rounded-[22px]`, `shadow-focus`
+- Border/Shadow: `rounded-[22px]`, inset sutil + `shadow-focus`
 
 ## Uso
 
@@ -58,6 +58,7 @@ Estandarizar inputs y textareas con label, estado de error y accesibilidad bási
 ## Restricciones
 - Siempre debe renderizar `label` visible.
 - Errores deben venir desde validación de dominio, no del componente.
+- No usar placeholders como sustituto de labels ni ocultar el focus ring.
 
 ## Decisiones relacionadas
 - ADR: [0004]

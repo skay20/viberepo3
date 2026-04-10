@@ -6,7 +6,7 @@ Snapshot del estado actual del proyecto.
 
 ## Última actualización
 
-- **Fecha:** 2026-04-08
+- **Fecha:** 2026-04-10
 - **Sesión completada por:** Codex
 - **Tier de la sesión:** standard
 
@@ -26,6 +26,7 @@ Snapshot del estado actual del proyecto.
 - Componentes base documentados (`Button`, `Field`, `Stepper`).
 - Refresh visual premium/editorial con referencia externa documentada.
 - Integracion inicial de `shadcn/ui` con primitives `button`, `card`, `input`.
+- Pasada visual adaptada desde `product/intake-form/DESIGN.md` con shell más técnico, contraste más limpio y documentación de dirección visual activa.
 
 ### ¿Qué está en progreso?
 
@@ -35,28 +36,30 @@ Snapshot del estado actual del proyecto.
 
 - Añadir tests automatizados de integración/UI.
 - Evaluar persistencia temporal (`localStorage`) para recuperación tras refresh.
-- Validar visualmente en dispositivos reales la nueva dirección premium.
+- Validar visualmente en dispositivos reales la nueva dirección guiada por `DESIGN.md`.
 - Extender la migracion a `shadcn/ui` a mas zonas si la app crece.
 
 ---
 
 ## Última tarea completada
 
-**Descripción:** Ejecutar PRD `PRDsimple.md` e implementar feature de intake de candidatos multi-step de punta a punta.
+**Descripción:** Adaptar `product/intake-form/DESIGN.md` como nueva dirección visual del shell UI sin romper el flujo multi-step existente.
 
 **Resultado:** ENTREGA COMPLETA
 
 **Archivos principales modificados:**
-- `product/intake-form/*`
-- `PRD.md`
-- `docs/contexto/prd-fuentes/2026-04-08-1414-prd-multi-step-candidate-intake-form.md`
+- `product/intake-form/src/*`
+- `product/intake-form/DESIGN.md`
+- `AGENTS.md`
+- `CLAUDE.md`
 - `docs/diseno/README.md`
-- `docs/cambios/CR-0001-intake-form-multistep.md`
-- `docs/decisiones/0004-stack-react-vite-tailwind-intake.md`
+- `docs/diseno/decisiones/elevenlabs-adapted-product-direction.md`
+- `docs/cambios/CR-0004-design-md-visual-pass.md`
+- `docs/decisiones/0006-adoptar-design-md-como-direccion-visual-activa.md`
 - `CHANGELOG.md`
 
 **ADRs creados en esta sesión:**
-- 0004-stack-react-vite-tailwind-intake.md
+- 0006-adoptar-design-md-como-direccion-visual-activa.md
 
 ---
 
@@ -64,6 +67,7 @@ Snapshot del estado actual del proyecto.
 
 - [ ] Definir estrategia de tests UI (Vitest + Testing Library o E2E).
 - [ ] Definir criterio de persistencia local en siguiente fase.
+- [ ] Decidir si futuras pantallas deben heredar el mismo shell oscuro o solo los tokens y primitives.
 
 ---
 
@@ -79,13 +83,14 @@ Snapshot del estado actual del proyecto.
 
 - Sin backend ni almacenamiento persistente, el refresh de página reinicia el flujo.
 - Aún no hay tests automatizados para prevenir regresiones.
+- La nueva dirección visual fue validada por build/lint, pero no por revisión visual manual en dispositivos reales.
 
 ---
 
 ## Próximo paso recomendado
 
-1. Implementar tests del flujo multi-step y validaciones críticas.
-2. Definir fase 2 con integración API o persistencia temporal según prioridad de producto.
+1. Validar visualmente el shell en móvil real y desktop ancho.
+2. Implementar tests del flujo multi-step y validaciones críticas.
 
 ---
 

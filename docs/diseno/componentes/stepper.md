@@ -23,10 +23,10 @@ Mostrar progreso del formulario multi-step con estado visual de paso actual y co
 - Completado
 
 ## Tokens utilizados
-- Color: `primary`, `accent`, `success`, `border`, `panel`, `ink`, `muted`
+- Color: `primary`, `accent`, `success`, `border`, `surface`, `ink`, `muted`
 - Spacing: `px-3`, `py-2`, `gap-3`
 - Typography: `text-xs`, `text-sm`
-- Border/Shadow: `rounded-[24px]`
+- Border/Shadow: `rounded-[24px]`, inset fino para separar estados sin ruido visual
 
 ## Uso
 

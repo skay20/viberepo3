@@ -18,6 +18,12 @@ Aplicación frontend para intake de candidatos con flujo guiado de 4 pasos, vali
 - Infraestructura: Ejecución local con Node.js
 - Otros: ESLint, class-variance-authority, clsx, tailwind-merge, Lucide
 
+## Estado de gobernanza
+
+- El repositorio actual opera como **repo derivado** según `origin`.
+- La gobernanza base sigue viniendo de `AGENTS.md`, `CLAUDE.md`, `PRD.md` y `docs/`.
+- La guía visual activa del frontend está en `product/intake-form/DESIGN.md`.
+
 ## Entorno de ejecución
 - Local: `product/intake-form`
 - Staging: No configurado
@@ -53,3 +59,4 @@ Aplicación frontend para intake de candidatos con flujo guiado de 4 pasos, vali
 ## Notas
 - La implementación vive en `product/intake-form/` siguiendo ADR 0002.
 - Decisión de stack registrada en ADR 0004.
+- La dirección visual activa quedó formalizada en ADR 0006 y en `docs/diseno/decisiones/elevenlabs-adapted-product-direction.md`.
